@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	margin: 0;
+	margin: 20px;
 }
 
 article,
@@ -110,7 +110,7 @@ optgroup,
 textarea {
     color: #00283C;
     font-family: 'vremena_groteskregular', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5;
 
 }
@@ -159,107 +159,58 @@ blockquote{
     font-style: normal;
 }
 
-/* Navigation */
-
-nav {
-    clear: both;
-    display: block;
-    z-index: 1;
-}
-nav ul {
+ul{
     list-style: none;
     margin: 0;
-    padding-left: 0; }
-nav ul li {
+    padding-left: 0;
+}
+li{
     text-align: left;
     position: relative;
-    -webkit-transform: translateX(-300px);
-    -moz-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    transform: translateX(-300px); }
-nav ul li a {
+}
+li a{
     display: inline-block;
     text-decoration: none;
-    position: relative; }
-nav ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #00283C;
-    width: 0; }
-nav ul li a:hover:after {
-    width: 100%; }
-
-nav .toggle-menu {
-    position: fixed;
-    display: block;
-    top: 40px;
-    left: 0;
-    float: right;
-    width: 80px;
-    height: 75px;
-    cursor: pointer; }
-nav .toggle-menu span,
-nav .toggle-menu span:before,
-nav .toggle-menu span:after {
-    height: 2px;
-    width: 30px;
-    margin: 0;
-    background: #00283C;
-    position: absolute;
-    display: block;
-    content: ""; }
-nav .toggle-menu span{
-    background: transparent;
+    position: relative;
 }
-nav .toggle-menu span {
-    top: 40px;
-    left: 30px; }
-nav .toggle-menu span:before {
-    top: -5px; }
-nav .toggle-menu span:after {
-    bottom: -5px; }
-nav.active .toggle-menu:hover span:before,
-nav.active .toggle-menu:hover span:after {
-    margin: 0; }
-nav.active .toggle-menu span:after.active {
-    top: 0; }
-nav.active .toggle-menu {
-    position: fixed; }
-nav.active .toggle-menu span {
-    background-color: transparent; }
-nav.active .toggle-menu span:before {
-    top: 0;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-nav.active .toggle-menu span:after {
-    bottom: 0;
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-nav.active .menu-lfe-container, .main-navigation.active ul, .main-navigation.active li {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-    margin-top:40px;}
 
-/*a,
-nav,
-nav a:after,
-nav .toggle-menu span,
-nav .toggle-menu span:before,
-nav .toggle-menu span:after
-{
+input {
+    border: 1px solid #00283C;
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    display: block;
+    width: 300px;
+}
+input:focus{
+    border: 1px solid #bde513;
+    outline: none;
+}
+input::placeholder {
+    font-family: 'vremenagroteskbook-webfont', sans-serif;
+    color: #00283C;
+}
+input:focus::placeholder{
+    color:#bde513;
+}
+input[type="submit"] {
+    text-align: center;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #00283C;
+    color: #fff;
+}
+input[type="submit"],
+input[type="submit"]:hover{
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out; }/*
+    transition: all 0.25s ease-in-out; 
+}
+
 
 /* Links */
 
