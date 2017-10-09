@@ -211,6 +211,19 @@ input[type="submit"]:hover{
     transition: all 0.25s ease-in-out; 
 }
 
+form#signin {
+    background-color: #fffff8;
+    border: 1px solid #bde513;
+    padding: 20px;
+}
+
+#signin input[type="text"],
+#signin input[type="email"]{
+    border:none;
+    border-bottom: 1px solid #bde513;
+    padding-left: 0;
+}
+
 
 /* Links */
 
