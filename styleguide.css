@@ -222,6 +222,7 @@ form#signin {
     border:none;
     border-bottom: 1px solid #bde513;
     padding-left: 0;
+    background-color: transparent;
 }
 
 
