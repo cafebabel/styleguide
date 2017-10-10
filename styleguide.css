@@ -1,9 +1,14 @@
 /* Normalize */
 
 html {
+    font-size: 62.5%;
 	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,255,0.004);
+
 }
 
 body {
