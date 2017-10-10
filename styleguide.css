@@ -27,76 +27,76 @@ summary {
 /* Vremena Grotesk */
 
 @font-face {
-    font-family: 'vremena_groteskregular';
-    src: url('./fonts/vremenagrotesk-webfont.woff2') format('woff2'),
-    url('./fonts/vremenagrotesk-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'vremena_groteskbold';
-    src: url('./fonts/vremenagroteskbold-webfont.woff2') format('woff2'),
-    url('./fonts/vremenagroteskbold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'vremena_groteskbold_italic';
-    src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
-    url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'vremena_groteskbook';
+    font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbook-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbook-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 @font-face {
-    font-family: 'vremena_groteskbook_italic';
+    font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbookitalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbookitalic-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'vremena_grotesk';
+    src: url('./fonts/vremenagrotesk-webfont.woff2') format('woff2'),
+    url('./fonts/vremenagrotesk-webfont.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
 }
 @font-face {
-    font-family: 'vremena_groteskitalic';
+    font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskitalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'vremena_groteskmedium';
+    font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskmedium-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskmedium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'vremena_groteskmedium_italic';
+    font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskmediumitalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskmediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'vremena_grotesk';
+    src: url('./fonts/vremenagroteskbold-webfont.woff2') format('woff2'),
+    url('./fonts/vremenagroteskbold-webfont.woff') format('woff');
+    font-weight: 800;
     font-style: normal;
+}
+@font-face {
+    font-family: 'vremena_grotesk';
+    src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
+    url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
 }
 
 /* Sporting grotesque */
 
 @font-face {
     font-family: 'sporting_grotesque';
-    src: url('./fonts/sporting_grotesque_gras-webfont.woff2') format('woff2'),
-    url('./fonts/sporting_grotesque_gras-webfont.woff') format('woff');
-    font-weight: bold;
+    src: url('./fonts/sporting_grotesque_normal-webfont.woff2') format('woff2'),
+    url('./fonts/sporting_grotesque_normal-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sporting_grotesque';
-    src: url('./fonts/sporting_grotesque_normal-webfont.woff2') format('woff2'),
-    url('./fonts/sporting_grotesque_normal-webfont.woff') format('woff');
-    font-weight: normal;
+    src: url('./fonts/sporting_grotesque_gras-webfont.woff2') format('woff2'),
+    url('./fonts/sporting_grotesque_gras-webfont.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -109,49 +109,50 @@ select,
 optgroup,
 textarea {
     color: #00283C;
-    font-family: 'vremena_groteskregular', sans-serif;
+    font-family: 'vremena_grotesk', sans-serif;
     font-size: 19px;
     line-height: 1.5;
-
+    font-weight:200;
+    font-style: normal;
 }
 
 /* Titles */
 
 h1 {
-    font-size:42px;
+    font-size: 42px;
     margin: 40px 0;
-  }
+}
 
-h2{
-    font-size:32px;
+h2 {
+    font-size: 32px;
     margin: 20px 0 40px;
 }
 
-h3{
-	font-size:28px;
+h3 {
+	font-size: 28px;
 	margin: 30px 0;
 }
 
-h4{
-	font-size:24px;
+h4 {
+	font-size: 24px;
 	margin: 25px 0;
 }
 
-h5{
-	font-size:22px;
+h5 {
+	font-size: 22px;
 	margin: 20px 0;
 }
 
-h6{
-	font-size:20px;
+h6 {
+	font-size: 20px;
 	margin: 20px 0;
 }
 
-p{
+p {
 	margin: 0 0 40px;
 }
 
-blockquote{
+blockquote {
 	font-family: 'sporting_grotesque', sans-serif;
 	font-size: 28px;
     margin: 50px 0;
@@ -159,16 +160,16 @@ blockquote{
     font-style: normal;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
-li{
+li {
     text-align: left;
     position: relative;
 }
-li a{
+li a {
     display: inline-block;
     text-decoration: none;
     position: relative;
@@ -182,32 +183,28 @@ input {
     display: block;
     width: 300px;
 }
-input:focus{
+input:focus {
     border: 1px solid #bde513;
     outline: none;
 }
 input::placeholder {
-    font-family: 'vremenagroteskbook-webfont', sans-serif;
+    font-family: 'vremena_grotesk', sans-serif;
     color: #00283C;
 }
-input:focus::placeholder{
+input:focus::placeholder {
     color:#bde513;
 }
-input[type="submit"] {
+input[type=submit] {
     text-align: center;
     padding: 20px 40px;
     cursor: pointer;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: #00283C;
     color: #fff;
 }
-input[type="submit"],
-input[type="submit"]:hover{
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+input[type=submit],
+input[type=submit]:hover {
     transition: all 0.25s ease-in-out; 
 }
 
@@ -217,8 +214,8 @@ form#signin {
     padding: 20px;
 }
 
-#signin input[type="text"],
-#signin input[type="email"]{
+#signin input[type=text],
+#signin input[type=email] {
     border:none;
     border-bottom: 1px solid #bde513;
     padding-left: 0;
@@ -228,7 +225,11 @@ form#signin {
 
 /* Links */
 
-a, a:visited, a:hover, a:focus, a:active {
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
     color: #00283C;
     text-decoration: none;
 }
@@ -245,15 +246,7 @@ p a:after {
     background-color: #bde513;
     overflow: hidden;
     content: "";
-    -webkit-transform: translateY(35%);
-    -moz-transform: translateY(35%);
-    -ms-transform: translateY(35%);
-    -o-transform: translateY(35%);
     transform: translateY(35%);
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
     z-index:-1;
 }
@@ -265,9 +258,5 @@ p a:hover:after {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
 }
