@@ -8,11 +8,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,255,0.004);
-
 }
 
 body {
-	margin: 2rem;
+    margin: 2rem;
 }
 
 article,
