@@ -332,7 +332,6 @@ form#signin {
     transform : scale(1);
 }
 
-
 [type=checkbox]:checked:focus + label:before,
 [type=checkbox]:not(:checked):focus + label:before {
     border : 0.1rem solid #bde513;
