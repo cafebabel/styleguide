@@ -11,7 +11,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,255,0.004);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,255,0.004);
 }
 
 body {
@@ -227,7 +227,9 @@ li a {
     position: relative;
 }
 
-input {
+
+input,
+button{
     border: 0.1rem solid #00283C;
     padding: 2rem;
     margin: 2rem 0;
@@ -267,7 +269,7 @@ button:hover{
 form#signin {
     background-color: #fffff8;
     border: 0.1rem solid #bde513;
-    padding: 20px;
+    padding: 2rem;
     margin: 5rem 0;
 }
 
@@ -347,10 +349,6 @@ label:hover:before {
     transition: border-color .3s;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> remotes/origin/master
 /* Links */
 
 a,
