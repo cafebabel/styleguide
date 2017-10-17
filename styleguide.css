@@ -11,7 +11,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,255,0.004);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* find source - font-rendering */
 }
 
 body {
@@ -229,7 +229,7 @@ li a {
 
 
 input,
-button{
+button {
     border: 0.1rem solid #00283C;
     padding: 2rem;
     margin: 2rem 0;
@@ -255,14 +255,14 @@ button {
     cursor: pointer;
 }
 input[type=submit]:hover,
-button:hover{
+button:hover {
     background-color: #00283C;
     color: #fff;
 }
 input[type=submit],
 input[type=submit]:hover,
 button,
-button:hover{
+button:hover {
     transition: all 0.25s ease-in-out;
 }
 
