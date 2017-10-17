@@ -11,7 +11,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,255,0.004);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,255,0.004);
 }
 
 body {
@@ -227,7 +227,9 @@ li a {
     position: relative;
 }
 
-input {
+
+input,
+button{
     border: 0.1rem solid #00283C;
     padding: 2rem;
     margin: 2rem 0;
@@ -246,24 +248,28 @@ input::placeholder {
 input:focus::placeholder {
     color:#bde513;
 }
-input[type=submit] {
+input[type=submit],
+button {
     text-align: center;
     padding: 2rem 4rem;
     cursor: pointer;
 }
-input[type=submit]:hover {
+input[type=submit]:hover,
+button:hover{
     background-color: #00283C;
     color: #fff;
 }
 input[type=submit],
-input[type=submit]:hover {
+input[type=submit]:hover,
+button,
+button:hover{
     transition: all 0.25s ease-in-out;
 }
 
 form#signin {
     background-color: #fffff8;
     border: 0.1rem solid #bde513;
-    padding: 20px;
+    padding: 2rem;
     margin: 5rem 0;
 }
 
@@ -283,6 +289,7 @@ form#signin {
 
 [type=checkbox]:not(:checked) + label,
 [type=checkbox]:checked + label {
+    display: block;
     position: relative;
     padding-left: 3.5rem;
     cursor: pointer;
@@ -342,7 +349,6 @@ label:hover:before {
     transition: border-color .3s;
 }
 
-
 /* Links */
 
 a,
@@ -379,3 +385,5 @@ p a:hover:after {
     transform: translateY(0);
     transition: all .3s;
 }
+
+
