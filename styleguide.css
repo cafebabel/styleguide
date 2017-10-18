@@ -11,7 +11,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* find source - font-rendering */
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* well ok, I could only find this shitty source : https://www.webfwd.co.uk/blog/how-to-smooth-website-fonts-using-css3/. I'm pretty sure that wasn't my original source, but anyway, let's remove the line */
 }
 
 body {
@@ -87,7 +87,7 @@ summary {
     font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
-    font-weight: 800;
+    font-weight:800;
     font-style: italic;
 }
 
