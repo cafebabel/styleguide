@@ -11,7 +11,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* well ok, I could only find this shitty source : https://www.webfwd.co.uk/blog/how-to-smooth-website-fonts-using-css3/. I'm pretty sure that wasn't my original source, but anyway, let's remove the line */
 }
 
 body {
@@ -87,7 +86,7 @@ summary {
     font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
-    font-weight:800;
+    font-weight: 800;
     font-style: italic;
 }
 
@@ -280,7 +279,7 @@ form#signin {
 
 #signin input[type=text],
 #signin input[type=email] {
-    border:none;
+    border: none;
     border-bottom: 0.1rem solid #bde513;
     background-color: transparent;
     padding:1rem 1rem 1rem 0;
@@ -298,7 +297,7 @@ form#signin {
     position: relative;
     padding-left: 3.5rem;
     cursor: pointer;
-    margin:5rem 0;
+    margin: 5rem 0;
 }
 
 [type=checkbox]:not(:checked) + label:before,
@@ -318,7 +317,6 @@ form#signin {
 [type=checkbox]:checked + label:after {
     font-family: 'icomoon';
     content: '\ea10';
-    font-style: normal;
     text-transform: none;
     line-height: 2.2rem;
     font-size: 2.2rem;
