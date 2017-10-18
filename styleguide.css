@@ -237,7 +237,8 @@ button {
     display: block;
     width: 30rem;
 }
-input:focus {
+input:focus,
+textarea:focus {
     border: 0.1rem solid #bde513;
     outline: none;
 }
@@ -346,6 +347,14 @@ form#signin {
 
 label:hover:before {
     border : 0.1rem solid #bde513 !important;
+    transition: border-color .3s;
+}
+
+textarea {
+    border: 0.1rem solid #00283C;
+    min-width: 30rem;
+    min-height: 15rem;
+    max-width: 100%;
     transition: border-color .3s;
 }
 
