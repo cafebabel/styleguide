@@ -236,11 +236,13 @@ button {
     background: #fff;
     display: block;
     width: 30rem;
+    transition: border-color .3s;
 }
 input:focus,
 textarea:focus {
     border: 0.1rem solid #bde513;
     outline: none;
+    transition: border-color .3s;
 }
 input::placeholder {
     font-family: 'vremena_grotesk', sans-serif;
@@ -254,11 +256,13 @@ button {
     text-align: center;
     padding: 2rem 4rem;
     cursor: pointer;
+    background-color: #00283C;
+    color: #fff;
 }
 input[type=submit]:hover,
 button:hover {
-    background-color: #00283C;
-    color: #fff;
+    background-color: #fff;
+    color:  #00283C;
 }
 input[type=submit],
 input[type=submit]:hover,
@@ -351,6 +355,7 @@ label:hover:before {
 }
 
 textarea {
+    padding: 1.5rem;
     border: 0.1rem solid #00283C;
     min-width: 30rem;
     min-height: 15rem;
