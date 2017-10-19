@@ -134,6 +134,9 @@ summary {
 .icon-checkmark:before {
     content: "\ea10";
 }
+.icon-arrow-down2:before {
+    content: "\ea3e";
+}
 .icon-facebook:before {
     content: "\ea90";
 }
@@ -225,7 +228,6 @@ li a {
     text-decoration: none;
     position: relative;
 }
-
 
 input,
 button {
@@ -359,6 +361,38 @@ textarea {
     min-height: 15rem;
     max-width: 100%;
     transition: border-color .3s;
+}
+
+.select-container{
+    position: relative;
+}
+
+select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
+    padding: 1rem 3rem 1rem 1rem;
+    margin:5rem 0;
+    background: #fff;
+    border: 0.1rem solid #00283C;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.select-container:after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\ea3e';
+    display: inline-block;
+    right: 1.5rem;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    outline: none;
 }
 
 /* Links */
