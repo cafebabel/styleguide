@@ -365,6 +365,7 @@ textarea {
 
 .select-container{
     position: relative;
+    display: inline-block;
 }
 
 select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
@@ -383,8 +384,8 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     position: absolute;
     font-family: 'icomoon';
     content: '\ea3e';
-    display: inline-block;
-    right: 1.5rem;
+    right: 1.2rem;
+    top: 6.2rem;
 }
 
 select::-ms-expand {
