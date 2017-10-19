@@ -333,18 +333,18 @@ form#signin {
 }
 
 [type=checkbox]:not(:checked) + label:after {
-    opacity   : 0;
-    transform : scale(0);
+    opacity: 0;
+    transform: scale(0);
 }
 
 [type=checkbox]:checked + label:after {
-    opacity   : 1;
-    transform : scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 [type=checkbox]:checked:focus + label:before,
 [type=checkbox]:not(:checked):focus + label:before {
-    border : 0.1rem solid #bde513;
+    border: 0.1rem solid #bde513;
 }
 
 label:hover:before {
