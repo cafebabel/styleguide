@@ -11,7 +11,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,255,0.004);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* well ok, I could only find this shitty source : https://www.webfwd.co.uk/blog/how-to-smooth-website-fonts-using-css3/. I'm pretty sure that wasn't my original source, but anyway, let's remove the line */
 }
 
 body {
@@ -87,7 +87,7 @@ summary {
     font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
-    font-weight: 800;
+    font-weight:800;
     font-style: italic;
 }
 
@@ -227,7 +227,9 @@ li a {
     position: relative;
 }
 
-input {
+
+input,
+button {
     border: 0.1rem solid #00283C;
     padding: 2rem;
     margin: 2rem 0;
@@ -246,24 +248,28 @@ input::placeholder {
 input:focus::placeholder {
     color:#bde513;
 }
-input[type=submit] {
+input[type=submit],
+button {
     text-align: center;
     padding: 2rem 4rem;
     cursor: pointer;
 }
-input[type=submit]:hover {
+input[type=submit]:hover,
+button:hover {
     background-color: #00283C;
     color: #fff;
 }
 input[type=submit],
-input[type=submit]:hover {
+input[type=submit]:hover,
+button,
+button:hover {
     transition: all 0.25s ease-in-out;
 }
 
 form#signin {
     background-color: #fffff8;
     border: 0.1rem solid #bde513;
-    padding: 20px;
+    padding: 2rem;
     margin: 5rem 0;
 }
 
@@ -271,8 +277,8 @@ form#signin {
 #signin input[type=email] {
     border:none;
     border-bottom: 0.1rem solid #bde513;
-    padding-left: 0;
     background-color: transparent;
+    padding:1rem 1rem 1rem 0;
 }
 
 [type=checkbox]:not(:checked),
@@ -283,10 +289,11 @@ form#signin {
 
 [type=checkbox]:not(:checked) + label,
 [type=checkbox]:checked + label {
+    display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 3.5rem;
     cursor: pointer;
-    margin:50px 0;
+    margin:5rem 0;
 }
 
 [type=checkbox]:not(:checked) + label:before,
@@ -295,8 +302,8 @@ form#signin {
     position: absolute;
     left: 0;
     top: 0;
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 0.1rem solid #00283C;
     background: #f8f8f8;
     transition: border-color .3s;
@@ -308,10 +315,10 @@ form#signin {
     content: '\ea10';
     font-style: normal;
     text-transform: none;
-    line-height: 22px;
-    font-size: 22px;
-    width: 37px;
-    height: 37px;
+    line-height: 2.2rem;
+    font-size: 2.2rem;
+    width: 3.7rem;
+    height: 3.7rem;
     text-align: center;
     position: absolute;
     top: 0.2rem;
@@ -332,10 +339,8 @@ form#signin {
     transform : scale(1);
 }
 
-
 [type=checkbox]:checked:focus + label:before,
-[type=checkbox]:not(:checked):focus + label:before
-{
+[type=checkbox]:not(:checked):focus + label:before {
     border : 0.1rem solid #bde513;
 }
 
@@ -343,9 +348,6 @@ label:hover:before {
     border : 0.1rem solid #bde513 !important;
     transition: border-color .3s;
 }
-
-
-
 
 /* Links */
 
@@ -383,3 +385,5 @@ p a:hover:after {
     transform: translateY(0);
     transition: all .3s;
 }
+
+
