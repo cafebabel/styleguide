@@ -132,25 +132,25 @@ summary {
 }
 
 .icon-checkmark:before {
-    content: "\ea10";
+    content: '\ea10';
 }
 .icon-arrow-down2:before {
-    content: "\ea3e";
+    content: '\ea3e';
 }
 .icon-facebook:before {
-    content: "\ea90";
+    content: '\ea90';
 }
 .icon-instagram:before {
-    content: "\ea92";
+    content: '\ea92';
 }
 .icon-twitter:before {
-    content: "\ea96";
+    content: '\ea96';
 }
 .icon-youtube:before {
-    content: "\ea9d";
+    content: '\ea9d';
 }
 .icon-linkedin2:before {
-    content: "\eaca";
+    content: '\eaca';
 }
 
 
@@ -420,7 +420,7 @@ p a:after {
     display: block;
     background-color: #bde513;
     overflow: hidden;
-    content: "";
+    content: '';
     transform: translateY(35%);
     transition: all .3s;
     z-index: -1;
@@ -456,7 +456,7 @@ button.menu_button:focus {
 
 button.menu_button:before,
 button.menu_button:after {
-    content: "";
+    content: '';
     height: 0.3rem;
     width: 3.5rem;
     margin: 0;
