@@ -11,7 +11,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 255, 0.004); /* well ok, I could only find this shitty source : https://www.webfwd.co.uk/blog/how-to-smooth-website-fonts-using-css3/. I'm pretty sure that wasn't my original source, but anyway, let's remove the line */
 }
 
 body {
@@ -87,7 +86,7 @@ summary {
     font-family: 'vremena_grotesk';
     src: url('./fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
     url('./fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
-    font-weight:800;
+    font-weight: 800;
     font-style: italic;
 }
 
@@ -134,6 +133,9 @@ summary {
 
 .icon-checkmark:before {
     content: "\ea10";
+}
+.icon-arrow-down2:before {
+    content: "\ea3e";
 }
 .icon-facebook:before {
     content: "\ea90";
@@ -227,7 +229,6 @@ li a {
     position: relative;
 }
 
-
 input,
 button {
     border: 0.1rem solid #00283C;
@@ -236,10 +237,13 @@ button {
     background: #fff;
     display: block;
     width: 30rem;
+    transition: border-color .3s;
 }
-input:focus {
+input:focus,
+textarea:focus {
     border: 0.1rem solid #bde513;
     outline: none;
+    transition: border-color .3s;
 }
 input::placeholder {
     font-family: 'vremena_grotesk', sans-serif;
@@ -253,11 +257,13 @@ button {
     text-align: center;
     padding: 2rem 4rem;
     cursor: pointer;
+    background-color: #00283C;
+    color: #fff;
 }
 input[type=submit]:hover,
 button:hover {
-    background-color: #00283C;
-    color: #fff;
+    background-color: #fff;
+    color:  #00283C;
 }
 input[type=submit],
 input[type=submit]:hover,
@@ -275,7 +281,7 @@ form#signin {
 
 #signin input[type=text],
 #signin input[type=email] {
-    border:none;
+    border: none;
     border-bottom: 0.1rem solid #bde513;
     background-color: transparent;
     padding:1rem 1rem 1rem 0;
@@ -293,7 +299,7 @@ form#signin {
     position: relative;
     padding-left: 3.5rem;
     cursor: pointer;
-    margin:5rem 0;
+    margin: 5rem 0;
 }
 
 [type=checkbox]:not(:checked) + label:before,
@@ -313,7 +319,6 @@ form#signin {
 [type=checkbox]:checked + label:after {
     font-family: 'icomoon';
     content: '\ea10';
-    font-style: normal;
     text-transform: none;
     line-height: 2.2rem;
     font-size: 2.2rem;
@@ -330,23 +335,65 @@ form#signin {
 }
 
 [type=checkbox]:not(:checked) + label:after {
-    opacity   : 0;
-    transform : scale(0);
+    opacity: 0;
+    transform: scale(0);
 }
 
 [type=checkbox]:checked + label:after {
-    opacity   : 1;
-    transform : scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 [type=checkbox]:checked:focus + label:before,
 [type=checkbox]:not(:checked):focus + label:before {
-    border : 0.1rem solid #bde513;
+    border: 0.1rem solid #bde513;
 }
 
 label:hover:before {
     border : 0.1rem solid #bde513 !important;
     transition: border-color .3s;
+}
+
+textarea {
+    padding: 1.5rem;
+    border: 0.1rem solid #00283C;
+    min-width: 30rem;
+    min-height: 15rem;
+    max-width: 100%;
+    transition: border-color .3s;
+}
+
+select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
+    padding: 1rem 3rem 1rem 1rem;
+    margin:5rem 0;
+    background: #fff;
+    border: 0.1rem solid #00283C;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+label[for=field_language]{
+    position: relative;
+    display: inline-block;
+}
+
+label[for=field_language]:after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\ea3e';
+    right: 1.2rem;
+    top: 6.2rem;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    outline: none;
 }
 
 /* Links */
