@@ -495,8 +495,7 @@ button.menu_button + nav {
     bottom: 0;
     left: 0;
     position: fixed;
-    font-size: 6vw; /* @vinyll what do you think of vh and vw units ? */
-    text-align: center;
+    font-size: 6vw; /* @vinyll vh and vw units ? ok ? */
     opacity: 0;
     z-index: -1;
     transition: all .3s;
@@ -508,14 +507,41 @@ button.menu_button + nav ul {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 button.menu_button + nav ul li {
     text-align: center;
 }
+
+button.menu_button + nav ul li a {
+    position: relative;
+    display: inline-block;
+}
+
+button.menu_button + nav ul li a:after {
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    background-color: #00283C;
+    left: 0;
+    bottom: 0.5rem;
+    width: 0;
+    transition: all .3s;
+}
+
+button.menu_button + nav ul li a:hover:after {
+    width: 100%;
+}
+
 button.menu_button.active + nav {
     display: block;
     opacity: 1;
     z-index: 1;
 }
+
+button.menu_button.active + nav ul li {
+    padding-bottom: 0;
+}
+
 button.menu_button + nav a {
     display: block;
 }
