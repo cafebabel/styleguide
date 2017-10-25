@@ -287,14 +287,12 @@ form#signin {
     padding:1rem 1rem 1rem 0;
 }
 
-[type=checkbox]:not(:checked),
-[type=checkbox]:checked {
+[type=checkbox] {
     position: absolute;
     left: -9999rem;
 }
 
-[type=checkbox]:not(:checked) + label,
-[type=checkbox]:checked + label {
+label[for=styleguide] {
     display: block;
     position: relative;
     padding-left: 3.5rem;
@@ -302,8 +300,7 @@ form#signin {
     margin: 5rem 0;
 }
 
-[type=checkbox]:not(:checked) + label:before,
-[type=checkbox]:checked + label:before {
+label[for=styleguide]:before {
     content: '';
     position: absolute;
     left: 0;
@@ -315,8 +312,7 @@ form#signin {
     transition: border-color .3s;
 }
 
-[type=checkbox]:not(:checked) + label:after,
-[type=checkbox]:checked + label:after {
+label[for=styleguide]:after {
     font-family: 'icomoon';
     content: '\ea10';
     text-transform: none;
@@ -344,8 +340,7 @@ form#signin {
     transform: scale(1);
 }
 
-[type=checkbox]:checked:focus + label:before,
-[type=checkbox]:not(:checked):focus + label:before {
+[type=checkbox]:focus + label:before {
     border: 0.1rem solid #bde513;
 }
 
