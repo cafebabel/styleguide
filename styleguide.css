@@ -287,20 +287,32 @@ form#signin {
     padding:1rem 1rem 1rem 0;
 }
 
-[type=checkbox] {
+/*[type=checkbox] {
     position: absolute;
     left: -9999rem;
-}
+}*/
 
 label[for=styleguide] {
-    display: block;
-    position: relative;
-    padding-left: 3.5rem;
+    display: inline-flex;
+    flex-direction: row-reverse;
     cursor: pointer;
+}
+
+.checkbox-container {
+    flex-direction: row-reverse;
+    display: inline-flex;
+    justify-content: flex-start;
     margin: 5rem 0;
 }
 
-label[for=styleguide]:before {
+[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    width: 3.5rem;
+}
+
+[type=checkbox]:before {
     content: '';
     position: absolute;
     left: 0;
@@ -312,35 +324,33 @@ label[for=styleguide]:before {
     transition: border-color .3s;
 }
 
-label[for=styleguide]:after {
+[type=checkbox]:after {
     font-family: 'icomoon';
     content: '\ea10';
     text-transform: none;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
     font-size: 2.2rem;
     width: 3.7rem;
     height: 3.7rem;
     text-align: center;
-    position: absolute;
-    top: 0.2rem;
-    left: -0.4rem;
+    margin-left: -0.4rem;
     display: inline-block;
     overflow: hidden;
     color: #bde513;
     transition: all .2s;
 }
 
-[type=checkbox]:not(:checked) + label:after {
+[type=checkbox]:not(:checked):after {
     opacity: 0;
     transform: scale(0);
 }
 
-[type=checkbox]:checked + label:after {
+[type=checkbox]:checked:after {
     opacity: 1;
     transform: scale(1);
 }
 
-[type=checkbox]:focus + label:before {
+[type=checkbox]:focus:before {
     border: 0.1rem solid #bde513;
 }
 
@@ -361,7 +371,7 @@ textarea {
 select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
     padding: 1rem 3rem 1rem 1rem;
     margin:5rem 0;
-    background: #fff;
+    background: transparent;
     border: 0.1rem solid #00283C;
     border-radius: 0;
     -webkit-appearance: none;
@@ -381,6 +391,7 @@ label[for=field_language]:after { /* How to make the arrow clickable as well ? *
     content: '\ea3e';
     right: 1.2rem;
     top: 6.2rem;
+    z-index: -1;
 }
 
 select::-ms-expand {
@@ -490,7 +501,7 @@ button.menu_button + nav {
     bottom: 0;
     left: 0;
     position: fixed;
-    font-size: 6vw; /* @vinyll vh and vw units ? ok ? */
+    font-size: 6vw;
     opacity: 0;
     z-index: -1;
     transition: all .3s;
