@@ -363,11 +363,6 @@ textarea {
     transition: border-color .3s;
 }
 
-.select-container{
-    position: relative;
-    display: inline-block;
-}
-
 select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
     padding: 1rem 3rem 1rem 1rem;
     margin:5rem 0;
@@ -380,7 +375,12 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     cursor: pointer;
 }
 
-.select-container:after {
+label[for=field_language]{
+    position: relative;
+    display: inline-block;
+}
+
+label[for=field_language]:after {
     position: absolute;
     font-family: 'icomoon';
     content: '\ea3e';
