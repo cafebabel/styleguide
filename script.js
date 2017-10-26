@@ -4,11 +4,7 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('active');
 });
 
-/* external link in new tab https://stackoverflow.com/questions/12987963/open-external-links-in-a-new-tab-without-jquery */
-function externalLinks() {
-    for(var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
-        var b = c[a];
-        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
-    }
-}
-externalLinks();
+/* external link in new tab */
+Array.from(document.querySelectorAll('a')).forEach(a => {
+    if (a.href.search(/\w+:\/\//) === 0 && a.hostname !== location.hostname) a.setAttribute('target', '_blank')
+})
