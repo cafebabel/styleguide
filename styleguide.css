@@ -291,11 +291,6 @@ form#signin {
     padding:1rem 1rem 1rem 0;
 }
 
-/*[type=checkbox] {
-    position: absolute;
-    left: -9999rem;
-}*/
-
 label[for=styleguide] {
     display: inline-flex;
     flex-direction: row-reverse;
@@ -483,10 +478,6 @@ button.menu-button:before {
 
 button.menu-button:after {
     bottom: 4rem;
-}
-
-button.menu-button:after.active {
-    top: 0;
 }
 
 button.menu-button.active:before {

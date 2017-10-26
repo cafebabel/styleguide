@@ -1,5 +1,5 @@
 /* open menu */
-const menuButton = document.querySelector('button.menu_button');
+const menuButton = document.querySelector('button.menu-button');
 menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('active');
 });
