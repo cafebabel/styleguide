@@ -384,12 +384,12 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     cursor: pointer;
 }
 
-label[for=field_language] {
+label[for=field-language] {
     position: relative;
     display: inline-block;
 }
 
-label[for=field_language]:after { /* How to make the arrow clickable as well ? */
+label[for=field-language]:after {
     position: absolute;
     font-family: 'icomoon';
     content: '\ea3e';
@@ -445,7 +445,7 @@ p a:hover:after {
 
 /* Menu */
 
-button.menu_button {
+button.menu-button {
     position: fixed;
     display: block;
     top: 1rem;
@@ -460,12 +460,12 @@ button.menu_button {
     z-index: 2;
 }
 
-button.menu_button:focus {
+button.menu-button:focus {
     outline: none;
 }
 
-button.menu_button:before,
-button.menu_button:after {
+button.menu-button:before,
+button.menu-button:after {
     content: '';
     height: 0.3rem;
     width: 3.5rem;
@@ -477,28 +477,28 @@ button.menu_button:after {
     transition: all .3s ease-in-out;
 }
 
-button.menu_button:before {
+button.menu-button:before {
     top: 4rem;
 }
 
-button.menu_button:after {
+button.menu-button:after {
     bottom: 4rem;
 }
 
-button.menu_button:after.active {
+button.menu-button:after.active {
     top: 0;
 }
 
-button.menu_button.active:before {
+button.menu-button.active:before {
     top: 4.6rem;
     transform: rotate(45deg);
 }
-button.menu_button.active:after {
+button.menu-button.active:after {
     bottom: 4.5rem;
     transform: rotate(-45deg);
 }
 
-button.menu_button + nav {
+button.menu-button + nav {
     background: white;
     top: 0;
     right: 0;
@@ -511,23 +511,23 @@ button.menu_button + nav {
     transition: all .3s;
 }
 
-button.menu_button + nav ul {
+button.menu-button + nav ul {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-button.menu_button + nav ul li {
+button.menu-button + nav ul li {
     text-align: center;
 }
 
-button.menu_button + nav ul li a {
+button.menu-button + nav ul li a {
     position: relative;
     display: inline-block;
 }
 
-button.menu_button + nav ul li a:after {
+button.menu-button + nav ul li a:after {
     content: '';
     position: absolute;
     height: 0.2rem;
@@ -538,20 +538,20 @@ button.menu_button + nav ul li a:after {
     transition: all .3s;
 }
 
-button.menu_button + nav ul li a:hover:after {
+button.menu-button + nav ul li a:hover:after {
     width: 100%;
 }
 
-button.menu_button.active + nav {
+button.menu-button.active + nav {
     display: block;
     opacity: 1;
     z-index: 1;
 }
 
-button.menu_button.active + nav ul li {
+button.menu-button.active + nav ul li {
     padding-bottom: 0;
 }
 
-button.menu_button + nav a {
+button.menu-button + nav a {
     display: block;
 }
