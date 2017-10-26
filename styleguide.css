@@ -291,7 +291,8 @@ form#signin {
     padding:1rem 1rem 1rem 0;
 }
 
-label[for=styleguide] {
+label[for=styleguide],
+label[for=remember] {
     display: inline-flex;
     flex-direction: row-reverse;
     cursor: pointer;
