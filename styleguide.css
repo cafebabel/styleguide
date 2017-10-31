@@ -8,6 +8,10 @@
     background: #bde513;
 }
 
+:focus {
+    outline: none;
+}
+
 html {
     font-size: 62.5%;
     font-family: sans-serif;
@@ -18,7 +22,7 @@ html {
 }
 
 body {
-    margin: 8rem 2rem;
+    margin: 4rem 2rem;
 }
 
 article,
@@ -135,6 +139,15 @@ summary {
     color: #00283C;
 }
 
+.icon-logo-cafebabel .path1:before {
+    content: "\e900";
+}
+.icon-logo-cafebabel .path2:before {
+    content: "\e901";
+    margin-left: -5.240234em;
+    color: #bde513;
+}
+
 .icon-checkmark:before {
     content: '\ea10';
 }
@@ -164,7 +177,6 @@ body,
 button,
 input,
 select,
-optgroup,
 textarea {
     color: #00283C;
     font-family: 'vremena_grotesk', sans-serif;
@@ -172,6 +184,10 @@ textarea {
     line-height: 1.5;
     font-weight:200;
     font-style: normal;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }
 
 /* Titles */
@@ -301,7 +317,7 @@ label[for=remember] {
     cursor: pointer;
 }
 
-.checkbox-container {
+.checkbox {
     flex-direction: row-reverse;
     display: inline-flex;
     justify-content: flex-start;
@@ -376,10 +392,6 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     margin:5rem 0;
     background: transparent;
     border: 0.1rem solid #00283C;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     cursor: pointer;
 }
 
@@ -440,6 +452,19 @@ p a:hover:after {
     bottom: 0.5rem;
     transform: translateY(0);
     transition: all .3s;
+}
+
+/* Logo */
+
+.logo img {
+    width: 10rem;
+    display: block;
+    margin: 4.7rem auto;
+    transition: all .2s;
+}
+
+.logo img:hover {
+    transform: translateY(-2px);
 }
 
 /* Menu */
