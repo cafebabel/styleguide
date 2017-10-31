@@ -573,7 +573,10 @@ main {
     grid-gap: 2rem;
     grid-template-columns: 50% 50%;
     grid-template-areas: 'section-left section-right';
-    border: 2px solid #00283C;
+    border: 0.1rem solid #00283C;
+}
+main section {
+    padding:1.5rem;
 }
 
 main section:first-of-type {
