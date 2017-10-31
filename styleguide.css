@@ -177,7 +177,6 @@ body,
 button,
 input,
 select,
-optgroup,
 textarea {
     color: #00283C;
     font-family: 'vremena_grotesk', sans-serif;
@@ -185,6 +184,10 @@ textarea {
     line-height: 1.5;
     font-weight:200;
     font-style: normal;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }
 
 /* Titles */
@@ -251,7 +254,6 @@ button {
     border: 0.1rem solid #00283C;
     padding: 2rem;
     margin: 2rem 0;
-    border-radius: 0;
     background: #fff;
     display: block;
     width: 30rem;
@@ -390,10 +392,6 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     margin:5rem 0;
     background: transparent;
     border: 0.1rem solid #00283C;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     cursor: pointer;
 }
 
