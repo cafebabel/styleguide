@@ -575,3 +575,21 @@ button.menu-button.active + nav ul li {
 button.menu-button + nav a {
     display: block;
 }
+
+/* Page profile */
+
+main {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'section-left section-right';
+    border: 2px solid #00283C;
+}
+
+main section:first-of-type {
+    grid-area: section-left;
+}
+
+main section:nth-of-type(2) {
+    grid-area: section-right;
+}
