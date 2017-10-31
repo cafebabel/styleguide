@@ -317,7 +317,7 @@ label[for=remember] {
     cursor: pointer;
 }
 
-.checkbox-container {
+.checkbox {
     flex-direction: row-reverse;
     display: inline-flex;
     justify-content: flex-start;
