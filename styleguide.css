@@ -572,17 +572,17 @@ main {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 'section-left section-right';
+    grid-template-areas: 'content sidebar';
     border: 0.1rem solid #00283C;
 }
 main section {
-    padding:1.5rem;
+    padding: 1.5rem;
 }
 
 main section:first-of-type {
-    grid-area: section-left;
+    grid-area: content;
 }
 
 main section:nth-of-type(2) {
-    grid-area: section-right;
+    grid-area: sidebar;
 }
