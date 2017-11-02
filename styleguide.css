@@ -174,9 +174,6 @@ textarea {
     line-height: 1.5;
     font-weight:200;
     font-style: normal;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     border-radius: 0;
 }
 
@@ -383,6 +380,10 @@ select { /* https://stackoverflow.com/questions/3532649/problem-with-select-and-
     background: transparent;
     border: 0.1rem solid #00283C;
     cursor: pointer;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 label[for=field-language] {
