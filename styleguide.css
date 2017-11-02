@@ -138,16 +138,6 @@ summary {
     line-height: 1;
     color: #00283C;
 }
-
-.icon-logo-cafebabel .path1:before {
-    content: "\e900";
-}
-.icon-logo-cafebabel .path2:before {
-    content: "\e901";
-    margin-left: -5.240234em;
-    color: #bde513;
-}
-
 .icon-checkmark:before {
     content: '\ea10';
 }
@@ -574,4 +564,25 @@ button.menu-button.active + nav ul li {
 
 button.menu-button + nav a {
     display: block;
+}
+
+/* Page profile */
+
+main {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'content sidebar';
+    border: 0.1rem solid #00283C;
+}
+main section {
+    padding: 1.5rem;
+}
+
+main section:first-of-type {
+    grid-area: content;
+}
+
+main section:nth-of-type(2) {
+    grid-area: sidebar;
 }
