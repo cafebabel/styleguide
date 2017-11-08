@@ -574,7 +574,6 @@ main {
     grid-gap: 2rem;
     grid-template-columns: 50% 50%;
     grid-template-areas: 'content sidebar';
-    border: 0.1rem solid #00283C;
 }
 main section {
     padding: 1.5rem;
