@@ -222,6 +222,8 @@ h6 {
     margin: 2rem 0;
 }
 
+/* Elements */
+
 p {
     margin: 0 0 4rem;
 }
@@ -415,6 +417,13 @@ select::-ms-expand {
 
 select:focus {
     outline: none;
+}
+
+/* Images */
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* Links */
