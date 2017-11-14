@@ -566,23 +566,3 @@ button.menu-button.active + nav ul li {
 button.menu-button + nav a {
     display: block;
 }
-
-/* Page profile */
-
-main {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'content sidebar';
-}
-main section {
-    padding: 1.5rem;
-}
-
-main section:first-of-type {
-    grid-area: content;
-}
-
-main section:nth-of-type(2) {
-    grid-area: sidebar;
-}
