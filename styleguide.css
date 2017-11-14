@@ -159,8 +159,14 @@ summary {
 .icon-youtube:before {
     content: '\ea9d';
 }
+.icon-flickr2:before {
+    content: '\eaa4';
+}
 .icon-linkedin2:before {
     content: '\eaca';
+}
+.icon-pinterest2:before {
+    content: '\ead2';
 }
 
 
