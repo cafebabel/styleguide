@@ -332,6 +332,7 @@ label[for=remember] {
     cursor: pointer;
     margin: 0;
     width: 3.5rem;
+    height: 2.5rem;
     padding: 0;
     border: none;
 }
