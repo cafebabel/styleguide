@@ -165,6 +165,9 @@ summary {
 .icon-pinterest2:before {
     content: '\ead2';
 }
+.icon-medium:before {
+    content: '\e900';
+}
 
 
 /* General */
