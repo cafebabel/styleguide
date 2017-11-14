@@ -138,8 +138,11 @@ summary {
     line-height: 1;
     color: #00283C;
 }
+.icon-medium:before {
+    content: "\e900";
+}
 .icon-checkmark:before {
-    content: '\ea10';
+    content: "\ea10";
 }
 .icon-arrow-down2:before {
     content: '\ea3e';
