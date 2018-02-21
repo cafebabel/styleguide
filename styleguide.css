@@ -198,6 +198,13 @@ h1 {
   margin: 4rem 0;
 }
 
+h1.title {
+  border: 0.3rem solid #00283c;
+  padding: 5rem;
+  line-height: 6.3rem;
+  text-align: center;
+}
+
 h2 {
   font-size: 3.2rem;
   margin: 2rem 0 4rem;
@@ -262,7 +269,8 @@ button {
 }
 input:focus,
 textarea:focus {
-  border: 0.1rem solid #bde513;
+  border: none;
+  border-bottom: 0.1rem solid #bde513;
   outline: none;
   transition: border-color 0.3s;
 }
@@ -385,10 +393,11 @@ label:hover:before {
 
 textarea {
   padding: 1.5rem;
-  border: 0.1rem solid #00283c;
+  border: none;
+  border-bottom: 0.1rem solid #00283c;
   min-width: 30rem;
   min-height: 15rem;
-  max-width: 100%;
+  width: 100%;
   transition: border-color 0.3s;
 }
 
@@ -553,6 +562,7 @@ button.menu-button + nav ul li {
 }
 
 button.menu-button + nav ul li a {
+  font-weight: 200;
   position: relative;
   display: inline-block;
 }
