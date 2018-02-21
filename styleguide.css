@@ -230,6 +230,8 @@ h6 {
   margin: 2rem 0;
 }
 
+/* Elements */
+
 p {
   margin: 0 0 4rem;
 }
@@ -321,6 +323,15 @@ form[name="login_user_form"] {
   border: none;
   border-bottom: 0.1rem solid #bde513;
   outline: none;
+}
+[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    width: 3.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
 }
 
 label[for="styleguide"],
@@ -434,6 +445,13 @@ select::-ms-expand {
 
 select:focus {
   outline: none;
+}
+
+/* Images */
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 /* Links */
