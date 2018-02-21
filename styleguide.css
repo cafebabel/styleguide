@@ -186,7 +186,7 @@ textarea {
   font-family: "vremena_grotesk", sans-serif;
   font-size: 1.9rem;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
   border-radius: 0;
 }
@@ -257,7 +257,7 @@ button {
   margin: 2rem 0;
   background: #fff;
   display: block;
-  width: 30rem;
+  width: 100%;
   transition: border-color 0.3s;
 }
 input:focus,
@@ -265,13 +265,6 @@ textarea:focus {
   border: 0.1rem solid #bde513;
   outline: none;
   transition: border-color 0.3s;
-}
-input::placeholder {
-  font-family: "vremena_grotesk", sans-serif;
-  color: #00283c;
-}
-input:focus::placeholder {
-  color: #bde513;
 }
 input[type="submit"],
 button {
@@ -310,9 +303,16 @@ form[name="login_user_form"] {
 #signin input[type="text"],
 #signin input[type="email"] {
   border: none;
-  border-bottom: 0.1rem solid #bde513;
+  border-bottom: 0.1rem solid #00283c;
   background-color: transparent;
   padding: 1rem 1rem 1rem 0;
+}
+
+#signin input[type="text"]:focus,
+#signin input[type="email"]:focus {
+  border: none;
+  border-bottom: 0.1rem solid #bde513;
+  outline: none;
 }
 
 label[for="styleguide"],
