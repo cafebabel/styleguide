@@ -324,14 +324,14 @@ form[name="login_user_form"] {
   border-bottom: 0.1rem solid #bde513;
   outline: none;
 }
-[type=checkbox] {
-    position: relative;
-    cursor: pointer;
-    margin: 0;
-    width: 3.5rem;
-    height: 2.5rem;
-    padding: 0;
-    border: none;
+[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  width: 3.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
 }
 
 label[for="styleguide"],
@@ -412,6 +412,11 @@ textarea {
   transition: border-color 0.3s;
 }
 
+.select label {
+  position: relative;
+  z-index: 0;
+}
+
 select {
   /* https://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit */
   padding: 1rem 3rem 1rem 1rem;
@@ -419,23 +424,19 @@ select {
   background: transparent;
   border: 0.1rem solid #00283c;
   cursor: pointer;
-  border-radius: 0;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-label[for="field-language"] {
-  position: relative;
-  display: inline-block;
-}
-
-label[for="field-language"]:after {
+.select label[for="field-language"]:after {
   position: absolute;
   font-family: "icomoon";
+  font-size: 1.9rem;
   content: "\ea3e";
   right: 1.2rem;
-  top: 6.2rem;
+  top: 9rem;
   z-index: -1;
 }
 
@@ -450,8 +451,8 @@ select:focus {
 /* Images */
 
 img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* Links */
