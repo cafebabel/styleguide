@@ -6,72 +6,74 @@
 <title>Styleguide - Cafébebel 2017</title>
 <link rel=stylesheet href=./styleguide.css>
 
-<a href=# class=logo><img src=./img/logo-cafebabel.svg alt="logo cafébabel"></a>
+  <a href=# class=logo><img src=./img/logo-cafebabel.svg alt="logo cafébabel"></a>
 
-<h1>h1: Chewie, we're home.</h1>
+  <h1 class=title>h1 title: Hello darkness, my old friend...</h1>
 
-<h2>h2: They call it a Royale with cheese.</h2>
+<main>
+  <h1>h1: Chewie, we're home.</h1>
 
-<h3>h3: Why so serious?</h3>
+  <h2>h2: They call it a Royale with cheese.</h2>
 
-<h4>h4: Mama says, 'Stupid is as stupid does.</h4>
+  <h3>h3: Why so serious?</h3>
 
-<h5>h5: Elementary, my dear Watson.</h5>
+  <h4>h4: Mama says, 'Stupid is as stupid does.</h4>
 
-<h6>h6: Magic Mirror on the wall, who is the fairest one of all?</h6>
+  <h5>h5: Elementary, my dear Watson.</h5>
 
-<p>p: My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And I will have my vengeance, in this life or the next.</p>
+  <h6>h6: Magic Mirror on the wall, who is the fairest one of all?</h6>
 
-<p>p a: The first rule of Fight Club is: You do not talk about Fight Club. The second rule of <a href=#>Fight Club</a> is: You do not talk about Fight Club.</p>
+  <p>p: My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And I will have my vengeance, in this life or the next.</p>
 
-<blockquote>blockquote: "Say hello to my little friend!"</blockquote>
+  <p>p a: The first rule of Fight Club is: You do not talk about Fight Club. The second rule of <a href=#>Fight Club</a> is: You do not talk about Fight Club.</p>
 
-<ul>
-	<li>li : Pierre</li>
-	<li>li : Pierre</li>
-	<li>li : Pierre</li>
-</ul>
+  <blockquote>blockquote: "Say hello to my little friend!"</blockquote>
 
-<form>
-  <input type=text name=firstname placeholder="First Name">
-  <input type=text name=lastname placeholder="Last Name">
-  <input type=email name=email placeholder="Email">
-  <input type=submit value="Sign in">
-</form>
-
-<form id=signin>
-  <input type=text name=name placeholder="Full Name">
-  <input type=email name=email placeholder="Email">
-  <input type=submit value="Sign in">
-</form>
-
-<form class=checkbox>
-    <label for=styleguide>Checkbox</label>
-    <input type=checkbox id=styleguide>
-</form>
-
-<form>
-  <textarea></textarea>
-</form>
-
-<label for=field-language>Languages
-  <select name=language id=field-language required>
-    <option value=en>English</option>
-    <option value=fr>French</option>
-    <option value=it>Italian</option>
-    <option value=de>German</option>
-    <option value=es>Spanish</option>
-  </select>
-</label>
-
-<button class=menu-button></button>
-<nav>
   <ul>
-    <li><a href=#>Home</a></li>
-    <li><a href=#>Participate</a></li>
-    <li><a href=#>Sections</a></li>
-    <li><a href=#>About</a></li>
+    <li>li : Pierre</li>
+    <li>li : Paul</li>
+    <li>li : Jacques</li>
   </ul>
-</nav>
 
-<script src=./script.js></script>
+  <form id=signin>
+    <label for=text>Full name</label>
+    <input type=text name=name id=text>
+    <label for=text>Email</label>
+    <input type=email name=email id=email>
+    <input type=submit value="Sign in">
+  </form>
+
+  <form class=checkbox>
+      <label for=styleguide>Checkbox</label>
+      <input type=checkbox id=styleguide>
+  </form>
+
+  <>
+    <p>Textarea:</p>
+    <textarea></textarea>
+  </form>
+
+  <div class=select>
+    <label for=field-language>Languages
+      <select name=language id=field-language required>
+        <option value=en>English</option>
+        <option value=fr>French</option>
+        <option value=it>Italian</option>
+        <option value=de>German</option>
+        <option value=es>Spanish</option>
+      </select>
+    </label>
+  </div>
+
+  <button class=menu-button></button>
+  <nav>
+    <ul>
+      <li><a href=#>Home</a></li>
+      <li><a href=#>Participate</a></li>
+      <li><a href=#>Sections</a></li>
+      <li><a href=#>About</a></li>
+    </ul>
+  </nav>
+</main>
+
+  <script src=./script.js></script>
